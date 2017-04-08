@@ -2,7 +2,7 @@
 Provide a surrogate or placeholder for another object to control access to it.
 
 
-=
+
 In short
 =
 - A remote proxy manages interaction between a client and a remote object.
@@ -13,7 +13,7 @@ In short
 - Java's built-in support for roxy can build a dynamic proxy class on demand and dispatch all calls on it to a handler of your choosing
 - Like any wrapper, proxies will increase the number of classes and objects in yours designs
 
-=
+
 OO principle
 =
 - Encapsulate what varies (soliD)
