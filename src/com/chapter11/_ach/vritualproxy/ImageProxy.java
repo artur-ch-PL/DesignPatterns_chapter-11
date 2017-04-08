@@ -9,9 +9,11 @@ import javax.swing.ImageIcon;
 
 public class ImageProxy implements Icon {
 	URL imageURL;
-	volatile ImageIcon imageIcon;
-	boolean retriving = false;
 	Thread retrievalThread;
+	volatile ImageIcon imageIcon;
+	private final static int HEIGHT = 640;
+	private final static int WIDTH = 480;
+	private boolean retriving = false;
 	
 	public ImageProxy(URL imageURL) {
 		this.imageURL = imageURL;
@@ -22,7 +24,7 @@ public class ImageProxy implements Icon {
 		if(imageIcon != null){
 			return imageIcon.getIconHeight();
 		} else {
-			return 640;
+			return HEIGHT;
 		}
 	}
 
@@ -31,7 +33,7 @@ public class ImageProxy implements Icon {
 		if(imageIcon != null){
 			return imageIcon.getIconWidth();
 		} else {
-			return 480;
+			return WIDTH;
 		}
 	}
 	

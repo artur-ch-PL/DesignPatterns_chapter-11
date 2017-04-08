@@ -7,10 +7,7 @@ import javax.swing.JComponent;
 
 public class ImageComponent extends JComponent{
 
-	/**
-	 * 
-	 */
-	private static final long	serialVersionUID	= 1L;
+	private static final long serialVersionUID	= 1L;
 	private Icon icon;
 	
 	public ImageComponent(Icon icon) {
